@@ -199,9 +199,14 @@ section.navbar nav.navbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.navbar nav.navbar div.navbar-brand a {
+  color: #000;
+  text-decoration: none;
 }
 
 section.navbar nav.navbar ul {
@@ -240,10 +245,14 @@ section.navbar nav.navbar ul li:hover > a::before {
           transform: scale(1);
 }
 
+section.navbar nav.navbar ul li:hover > a {
+  color: #000;
+}
+
 section.navbar nav.navbar ul li a {
   position: relative;
   width: 100%;
-  color: #121212;
+  color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
 }
 
@@ -281,7 +290,7 @@ section.navbar nav.navbar .form-search span {
 
 section.slider {
   margin-top: 20px;
-  max-width: 1400px;
+  max-width: 3000px;
 }
 
 section.news .card .category-name {
