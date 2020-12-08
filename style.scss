@@ -48,6 +48,28 @@ section {
   margin-bottom: 10px;
 }
 
+.ribbon{
+  position: relative;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: transparent;
+  padding: 3px 5px;
+  min-width: 60px;
+  max-width: 80px;
+  &-primary{
+    background: var(--success);
+    color: #fff;
+  }
+  &-left{
+    left: -5px;
+    top: 35px;
+  }
+  &-content{
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
 .btn-custom {
   padding: 10px 20px;
   background-color: transparent;
@@ -73,7 +95,7 @@ section {
   background: #cd2122;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 1000;
   .heading {
     padding: 5px;
     display: flex;
@@ -132,6 +154,8 @@ section.navbar {
   margin-top: 10px !important;
   width: 100%;
   padding-top: 40px;
+  box-shadow: 4px 5px 5px rgba($color: #000000, $alpha: .1);
+  z-index: 999;
   nav.navbar {
     width: 100%;
     align-items: center;
@@ -509,7 +533,7 @@ section.body {
         font-weight: 600;
         font-size: 1.4rem;
         text-transform: uppercase;
-        color: #595959;
+        color: #2e2e2e;
         margin-bottom: 10px;
         text-decoration: none;
         transition: all 0.3s ease;
@@ -617,4 +641,13 @@ section.body {
         }
     }
   }
+}
+
+section.after{
+  margin-bottom: 40px;
+}
+
+section.advance{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
